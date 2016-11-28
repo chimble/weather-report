@@ -11,6 +11,3 @@ class Sunriseset():
         new = results['moon_phase']
         print("sunrise: {}:{} sunset: {}:{}".format(new['sunrise']['hour'], new['sunrise']['minute'], new['sunset']['hour'], new['sunset']['minute']))
         #print(json.dumps(r.json(), indent=4))
-
-c=Sunriseset()
-c.sun()

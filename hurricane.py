@@ -9,7 +9,4 @@ class Hurricane():
         r = requests.get(url)
         results = r.json()
         new = results['currenthurricane']
-        print(new[0]['stormInfo']['stormName_Nice'])
-
-c=Hurricane()
-c.windy()
+        print("\n\n{}\n\n".format(new[0]['stormInfo']['stormName_Nice']))
