@@ -8,4 +8,6 @@ class Sunriseset():
         r = requests.get(url)
         results = r.json()
         new = results['moon_phase']
-        print("\nsunrise: {}:{} sunset: {}:{}".format(new['sunrise']['hour'], new['sunrise']['minute'], new['sunset']['hour'], new['sunset']['minute']))
+        print("\nsunrise: {}:{} sunset: {}:{}".format(new['sunrise']['hour'],
+              new['sunrise']['minute'], new['sunset']['hour'],
+              new['sunset']['minute']))
