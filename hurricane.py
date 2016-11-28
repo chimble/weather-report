@@ -1,6 +1,4 @@
 import requests
-import json
-import os.path
 
 
 class Hurricane():
