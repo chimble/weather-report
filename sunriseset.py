@@ -7,7 +7,7 @@ class Sunriseset():
                + input("zipcode: ") + ".json")
         r = requests.get(url)
         results = r.json()
-        new = results['moon_phase']
+        new = results['sun_phase']
         print("\nsunrise: {}:{} sunset: {}:{}".format(new['sunrise']['hour'],
               new['sunrise']['minute'], new['sunset']['hour'],
               new['sunset']['minute']))

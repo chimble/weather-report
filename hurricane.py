@@ -7,4 +7,7 @@ class Hurricane():
         r = requests.get(url)
         results = r.json()
         new = results['currenthurricane']
-        print("\n\n{}\n\n".format(new[0]['stormInfo']['stormName_Nice']))
+        try:
+            print("\n\n{}\n\n".format(new[0]['stormInfo']['stormName_Nice']))
+        except:
+            print("\nno storms. go climb a tree")
